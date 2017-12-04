@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:weightSum="100">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:background="@color/questionBackground"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="@string/question_two"
+            android:textSize="24sp"/>
+
+        <ImageButton
+            android:id="@+id/wrong_answer_1_image_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:scaleType="fitXY"
+            android:src="@drawable/q2_incorrect_graph1_land"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <ImageButton
+            android:id="@+id/correct_answer_image_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:scaleType="fitXY"
+            android:src="@drawable/q2_correct_graph_land"/>
+
+        <ImageButton
+            android:id="@+id/wrong_answer_2_image_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:scaleType="fitXY"
+            android:src="@drawable/q2_incorrect_graph2_land"/>
+
+    </LinearLayout>
+
+</LinearLayout>
